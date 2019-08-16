@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_background_grey"
+    android:paddingStart="20dp"
+    android:paddingTop="6dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="6dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAva"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="3dp"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/imgAva"
+        android:textColor="@android:color/black"
+        tools:text="FRIENDS NAME" />
+
+    <TextView
+        android:id="@+id/tvNim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/imgAva"
+        android:textSize="12sp"
+        tools:text="FRIENDS NIM" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_keyboard_arrow_right_24dp" />
+</RelativeLayout>
